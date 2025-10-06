@@ -1,4 +1,4 @@
-# FINE 3300 — Assignment 1 (Mortgage & Exchange Rates)
+# FINE 3300 - Assignment 1 (Mortgage & Exchange Rates)
 Author: Dennis Han (219615848)
 
 This repository contains all deliverables for FINE 3300 - Assignment #1.
@@ -18,8 +18,6 @@ Bi-weekly Payment: $281.38
 Weekly Payment: $140.61
 Rapid Bi-weekly Payment: $305.2
 Rapid Weekly Payment: $152.6
-
-Values above use semi-annual compounding to derive EAR, then convert to per-period rates and compute PVA-based payments. Accelerated schedules are derived from the unrounded monthly amount and rounded at the end.
 
 ### First Requested Output  (Part 2, ExchangeRates)
 
