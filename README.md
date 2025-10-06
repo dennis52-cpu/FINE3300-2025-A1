@@ -4,7 +4,7 @@ Author: Dennis Han (219615848)
 This repository contains all deliverables for FINE 3300 - Assignment #1.
 The first part includes a Python implementation of a Mortgage Payment calculator using semi-annual compounding → EAR → periodic rates → present value of annuity (PVA).
 
-The part part involves implementation of an Exchange Rates utility that loads Bank of Canada rates from a .csv file and converts amounts via CAD (supports USD↔CAD and other currencies present in the file).
+The second part involves implementation of an Exchange Rates utility that loads Bank of Canada rates from a .csv file and converts amounts via CAD (supports USD↔CAD and other currencies present in the file).
 
 ### Requested output (Part 1, MortgagePayments)
 
