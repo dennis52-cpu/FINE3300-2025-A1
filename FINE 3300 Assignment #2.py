@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Part 2: Mortgage Payments
+# Part 2: Exchange Rates
 # Note: I used pandas to parse the .csv file because I'm pretty familiar with it even though its technically introduced next lecture
 # The program collects user inputs (amount as float; from/to as strings)
 # This program loads the BankofCanadaExchangeRates.csv, builds a “CAD per 1 unit of currency” map from columns ending in “/CAD” using the last non-NaN value, and performs FX conversions via CAD
@@ -56,7 +56,7 @@ Exchange_rates = ExchangeRates("BankOfCanadaExchangeRates.csv")
 # Show which currencies the user can do conversions with
 print("\nAvailable currencies to convert:", ", ".join(Exchange_rates.supported_currencies()))
 
-# Input from the suer for the amount (float) and currencies they would like to convert from and to (str)
+# Input from the user for the amount (float) and currencies they would like to convert from and to (str)
 amount = float(input("Please enter the amount you would like to convert: "))
 from_currency = str(input("Please enter the currency you are converting from: "))
 to_currency = str(input("Please enter the currency you are converting to: "))

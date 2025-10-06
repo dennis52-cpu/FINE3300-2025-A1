@@ -3,7 +3,7 @@
 # Given a principal (float), a quoted annual rate entered as a percent (float), and an amortization period in years (int). It converts the nominal semi-annual rate to an effective annual
 # rate (EAR), derives the corresponding per-period rates, and uses the present value of an annuity (PVA) to compute payments, rounding money values to two decimals.
 # Class & attributes: `MortgagePayment` has public attributes `quoted_rate` (stored as a decimal after converting the user’s percent input) and `amortization_period`
-# Public Methods: effective_annual_rate(), periodic_rate(), payments(); Private Methodds: __pva__(), __round2__() used internally by payments().
+# Public Methods: effective_annual_rate(), periodic_rate(), payments(); Private Methods: __pva__(), __round2__() used internally by payments().
 # This program assumes valid inputs and does not provide data validation checks
 
 # Ask the user for inputs and casts them as numbers, float for the quoted_rate and int for the amortization_period
@@ -22,7 +22,7 @@ class MortgagePayment:
         quoted_rate = self.quoted_rate
         return ((1 + quoted_rate / 2) ** 2) - 1
     
-    # Function that converts APR to EAR for a given frequency
+    # # Function that converts EAR to a per-period rate for the given frequency
     def periodic_rate(self, periods_per_year):
         EAR = self.effective_annual_rate()
         return (1 + EAR) ** (1 / float(periods_per_year)) - 1
