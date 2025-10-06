@@ -41,7 +41,7 @@ Please enter the currency you are converting from: USD
 Please enter the currency you are converting to: CAD
 Result: 100000.0 USD -> 136980.0 CAD
 
-## Assumptions / Notes
+### Assumptions / Notes
 - Input quoted rate is provided as percent (e.g. 5.5 for 5.5%). The program converts to decimal internally.
 - Monetary results are rounded to two decimals for display.
 - The CSV is assumed to be ordered by date (top=oldest, bottom=latest); if not, the program still selects the last non-NaN per column as latest.
